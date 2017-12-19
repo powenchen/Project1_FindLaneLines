@@ -15,9 +15,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/00000.jpg "Grayscale image"
-[image2]: ./examples/00001.jpg "Canny edge detection"
-[image3]: ./examples/00002.jpg "Final output image"
+[image1]: ./examples/00000.png "Grayscale image"
+[image2]: ./examples/00001.png "Canny edge detection"
+[image3]: ./examples/00002.png "Final output image"
 
 ---
 
