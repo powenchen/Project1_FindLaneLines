@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image1]: ./examples/00000.png "Grayscale image"
 [image2]: ./examples/00001.png "Canny edge detection"
 [image3]: ./examples/00002.png "Final output image"
-
+[link1]: http://sourcedb.ict.cas.cn/cn/ictthesis/200907/P020090722604026061742.pdf "this paper"
 ---
 
 ### Reflection
@@ -39,16 +39,16 @@ My pipeline consisted of 5 steps.
 ![alt text][image3]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings
 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+A possible shortcoming is the module is very fragile to the change in light condition since I have so many constraints in the colors. Pixels could be filtered when it is dark.
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Possible improvements
 
-A possible improvement would be to ...
+First, we could try some image processing skills for uneven lighting condition images, for example, [link1] shows the ability to deal with uneven lighting condition.
 
-Another potential improvement could be to ...
+
+
+
