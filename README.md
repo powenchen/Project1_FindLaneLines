@@ -18,7 +18,6 @@ The goals / steps of this project are the following:
 [image1]: ./examples/00000.png "Grayscale image"
 [image2]: ./examples/00001.png "Canny edge detection"
 [image3]: ./examples/00002.png "Final output image"
-[link1]: http://sourcedb.ict.cas.cn/cn/ictthesis/200907/P020090722604026061742.pdf "this paper"
 ---
 
 ### Reflection
@@ -47,7 +46,9 @@ A possible shortcoming is the module is very fragile to the change in light cond
 
 ### 3. Possible improvements
 
-First, we could try some image processing skills for uneven lighting condition images, for example, [link1] shows the ability to deal with uneven lighting condition.
+First, we could try some image processing skills for uneven lighting condition images, for example, [this paper](http://sourcedb.ict.cas.cn/cn/ictthesis/200907/P020090722604026061742.pdf) shows the ability to deal with uneven lighting condition.
+
+Besides the above solution, we can also try deep learning approach(CNNs) for image processing.
 
 
 
