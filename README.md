@@ -15,21 +15,28 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./examples/00000.jpg "Grayscale image"
+[image2]: ./examples/00001.jpg "Canny edge detection"
+[image3]: ./examples/00002.jpg "Final output image"
 
 ---
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. My pipeline for image processing.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps. 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
+1. I converted the images to grayscale and apply a mask for color(we are only interested in white and yellow) and a mask for region of interest(a trapezoid area) 
 ![alt text][image1]
+2. Apply gaussian blur and Canny edge detection to find all edges in the image
+![alt text][image2]
+3. Apply Hough line transform to find all possible lines in the image, I choose a quite big 'max_line_gap' since there are dashed lines in the test
+
+4. Try to separate the detected lines with K-means algorithm(K=2 here), average the slope and intercept for both clusters
+
+5. The averaged lines are the representations of left lane and right lane, overlap them onto original image
+![alt text][image3]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
